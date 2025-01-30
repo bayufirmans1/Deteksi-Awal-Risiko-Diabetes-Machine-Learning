@@ -74,7 +74,7 @@ Berdasarkan tabel deskripsi data diatas pada variabel Glucose, BloodPressure, Sk
 
 ### Univariate Analysis
 Histogram berikut merupakan distribusi data masing-masing variabel.
-![Gambar1](https://i.ibb.co/KGX000h/univariate.png)
+![Gambar1](img/univariate.png)
 **Gambar.1**
 
 Pada gambar.1 diatas dapat diketahui bahwa terdapat orang juga memiliki kadar glukosa antara 140 mg/dL sampai 199 mg/dL dan dianggap sebagai penderita pradiabetes. Sebagian besar orang memiliki tekanan darah antara 50-100 mmHg, sebagian besar orang memiliki insulin 0, Nilai BMI berkisar di antara 20 sampai 50, sementara untuk orang dewasa yang sehat harus memiliki BMI antara 18,5-24,9, hal ini memperlihatkan banyak orang yang kelebihan berat badan atau obesitas serta sejumlah besar orang memiliki usia antara 20-40 tahun. Pada distribusi semua variabel mengalami skewness sehingga diperlukan proses normalisasi sebelum digunakan untuk proses pemodelan.
@@ -84,7 +84,7 @@ Pada gambar.1 diatas dapat diketahui bahwa terdapat orang juga memiliki kadar gl
 
 Berikut grafik heatmap untuk melihat kolerasi antara semua variabel numerik.
 
-![Gambar2](https://i.ibb.co/7XWJZtt/multivariate-heatmap.png)
+![Gambar2](img/multivariate-heatmap.png)
 **Gambar 2**
 
 Dari gambar.2 grafik heatmap diatas menunjukkan koefisien korelasi antar himpunan variabel. Jika nilai korelasi > 0 maka terdapat korelasi positif. Sementara nilai satu variabel meningkat, nilai variabel lainnya juga meningkat. Jika persamaan korelasi = 0 maka tidak ada korelasi. Jika korelasi < 0 maka ada korelasi negatif. Setiap variabel independen dalam tabel berkorelasi dengan masing-masing nilai lain dalam tabel. Dengan demikian, semua variabel digunakan untuk modelling. Korelasi yang cukup kuat antara variabel Glucose, BMI, Age, dan Pregnancies dengan variabel Target.
@@ -233,7 +233,7 @@ Setelah melakukan evaluasi data training dan data test, berdasarkan tabel 3 diat
 
 Berikut grafik visualisasi Accuracy dan F1 Score pada Gambar 3 : 
 
-![Gambar3](https://i.ibb.co/JnSTFvn/eval.png)
+![Gambar3](img/evaluation.png)
 **Gambar 3** 
 
 Hasil *Accuracy Score* sebesar 84,11% dan F1 Score 77,33% pada pengujian menggunakan algoritma *random forest* ini lebih tinggi dibanding penelitian Sisodia et al. (2018) yang menghasilkan *Naive Bayes* sebagai model terbaik dengan skor akurasi sebesar 76,3%. Namun masih dibawah penelitian Adigun et al. (2022) yang menghasilkan skor akurasi tertinggi menggunakan *Random Forest* sebesar 100%.
