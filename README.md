@@ -233,7 +233,9 @@ Setelah melakukan evaluasi data training dan data test, berdasarkan tabel 3 diat
 
 Berikut grafik visualisasi Accuracy dan F1 Score pada Gambar 3 : 
 
+
 ![Gambar3](img/evaluation.png)
+
 **Gambar 3** 
 
 Hasil *Accuracy Score* sebesar 84,11% dan F1 Score 77,33% pada pengujian menggunakan algoritma *random forest* ini lebih tinggi dibanding penelitian Sisodia et al. (2018) yang menghasilkan *Naive Bayes* sebagai model terbaik dengan skor akurasi sebesar 76,3%. Namun masih dibawah penelitian Adigun et al. (2022) yang menghasilkan skor akurasi tertinggi menggunakan *Random Forest* sebesar 100%.
