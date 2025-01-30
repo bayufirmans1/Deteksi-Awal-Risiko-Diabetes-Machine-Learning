@@ -55,7 +55,7 @@ Dataset ini memiliki 768 baris data pengukuran diagnostik diabetes dan memiliki 
 - Age : Usia (tahun)
 - Outcome : Kelas variabel (0 jika non-diabetes, 1 jika diabetes)
 
-**Tabel.1 Deskripsi Data**
+**Tabel 1. Deskripsi Data**
 
 |   | count | mean | std | min  | 25%  | 50% | 70% | max  |
 |---|--------|-----------|-----------|--------|--------|-----------|----------|--------|
@@ -75,7 +75,7 @@ Berdasarkan tabel deskripsi data diatas pada variabel Glucose, BloodPressure, Sk
 ### Univariate Analysis
 Histogram berikut merupakan distribusi data masing-masing variabel.
 ![Gambar1](img/univariate.png)
-**Gambar.1**
+**Gambar 1.**
 
 Pada gambar.1 diatas dapat diketahui bahwa terdapat orang juga memiliki kadar glukosa antara 140 mg/dL sampai 199 mg/dL dan dianggap sebagai penderita pradiabetes. Sebagian besar orang memiliki tekanan darah antara 50-100 mmHg, sebagian besar orang memiliki insulin 0, Nilai BMI berkisar di antara 20 sampai 50, sementara untuk orang dewasa yang sehat harus memiliki BMI antara 18,5-24,9, hal ini memperlihatkan banyak orang yang kelebihan berat badan atau obesitas serta sejumlah besar orang memiliki usia antara 20-40 tahun. Pada distribusi semua variabel mengalami skewness sehingga diperlukan proses normalisasi sebelum digunakan untuk proses pemodelan.
 
@@ -85,7 +85,7 @@ Pada gambar.1 diatas dapat diketahui bahwa terdapat orang juga memiliki kadar gl
 Berikut grafik heatmap untuk melihat kolerasi antara semua variabel numerik.
 
 ![Gambar2](img/multivariate-heatmap.png)
-**Gambar 2**
+**Gambar 2.**
 
 Dari gambar.2 grafik heatmap diatas menunjukkan koefisien korelasi antar himpunan variabel. Jika nilai korelasi > 0 maka terdapat korelasi positif. Sementara nilai satu variabel meningkat, nilai variabel lainnya juga meningkat. Jika persamaan korelasi = 0 maka tidak ada korelasi. Jika korelasi < 0 maka ada korelasi negatif. Setiap variabel independen dalam tabel berkorelasi dengan masing-masing nilai lain dalam tabel. Dengan demikian, semua variabel digunakan untuk modelling. Korelasi yang cukup kuat antara variabel Glucose, BMI, Age, dan Pregnancies dengan variabel Target.
 
@@ -101,7 +101,7 @@ Menyeleksi fitur dilakukan dengan membandingkan korelasi fitur terhadap target d
 
 - **Penanganan Missing Value**
 
-**Tabel.3 Missing Value**
+**Tabel 2. Missing Value**
 | Variabel | Jumlah missing value |
 |--|--|
 | Pregnancies | 0 |
@@ -222,7 +222,7 @@ $$F1 score=2×\frac{precision×recall}{precision+recall}​$$
 Dalam rumus tersebut, *precision* adalah rasio prediksi positif yang benar terhadap total prediksi positif, dan *recall* adalah rasio prediksi positif yang benar terhadap total sampel yang sebenarnya positif. F1 score menggabungkan *precision* dan *recall* menggunakan rata-rata harmonik, sehingga memberikan skor yang lebih baik daripada hanya menggunakan *precision* atau *recall* saja.
 
 
-**Tabel.3 Evaluasi Model**
+**Tabel 3. Evaluasi Model**
 |     Algoritma     | Accuracy Score Training | Accuracy Score Testing | F1 Score Training | F1 Score Testing |
 |------------------ |---------------| -------- |---------------| -------- |
 |   Random Forest   | 1.000000 |  0.841121 | 1.000000 | 0.773333 |
@@ -233,9 +233,8 @@ Setelah melakukan evaluasi data training dan data test, berdasarkan tabel 3 diat
 
 Berikut grafik visualisasi Accuracy dan F1 Score pada Gambar 3 : 
 
-
 ![Gambar3](img/evaluation.png)
-**Gambar 3** 
+**Gambar 3.** 
 
 Hasil *Accuracy Score* sebesar 84,11% dan F1 Score 77,33% pada pengujian menggunakan algoritma *random forest* ini lebih tinggi dibanding penelitian Sisodia et al. (2018) yang menghasilkan *Naive Bayes* sebagai model terbaik dengan skor akurasi sebesar 76,3%. Namun masih dibawah penelitian Adigun et al. (2022) yang menghasilkan skor akurasi tertinggi menggunakan *Random Forest* sebesar 100%.
 
