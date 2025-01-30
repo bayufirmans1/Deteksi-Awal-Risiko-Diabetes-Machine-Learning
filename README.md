@@ -1,5 +1,4 @@
 
-
 # Deteksi Awal Risiko Diabetes Menggunakan Machine Learning
 ###### 
 
